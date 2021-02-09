@@ -8,11 +8,11 @@ namespace Raindrops
 	{
 		public static string RaindropsMethod(int num)
 		{
-			string output = "";
-			if (num % 3 == 0){output += "Pling";}
-			if (num % 5 == 0){output += "Plang";}
-			if (num % 7 == 0){output += "Plong";}
-
+			StringBuilder sb = new StringBuilder();
+			if (num % 3 == 0){ sb.Append("Pling"); }
+			if (num % 5 == 0){ sb.Append("Plang"); }
+			if (num % 7 == 0){ sb.Append("Plong"); }
+			string output = sb.ToString();
 			if (output == "")
 			{
 				output = num.ToString();
