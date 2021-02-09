@@ -75,5 +75,12 @@ namespace Raindrops
 			string raindropsOutput = RaindropsLibrary.RaindropsMethod(num);
 			Assert.That(raindropsOutput, Is.EqualTo(expected));
 		}
+
+		[Test]
+		public void InputOfZeroGivesPlingPlangPlong()
+		{
+			string raindropsOutput = RaindropsLibrary.RaindropsMethod(0);
+			Assert.That(raindropsOutput, Is.EqualTo("PlingPlangPlong"));
+		}
 	}
 }
